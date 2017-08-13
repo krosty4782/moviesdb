@@ -6,9 +6,9 @@ import rx.Observable;
 
 public interface MoviesApi {
 
-    @GET("/movie/now_playing")
+    @GET("movie/now_playing")
     Observable<ResultsApiModel> getNowPlaying();
 
-    @GET("/movie/{id}")
+    @GET("movie/{id}")
     Observable<MovieApiModel> getMovieInformation(@Path("id") String movieId);
 }

@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApplicationModule {
 
     //TODO api key would probably go in a configuration file for okHttp, harcoded here for time purposes
-    private static final String API_KEY = "6808da72";
+    private static final String API_KEY = "70bea916230b169eb500a171c5264979";
 
     @Provides
     @ApplicationScope

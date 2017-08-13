@@ -9,7 +9,7 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 
 public class MovieDBClient implements RetrofitClient {
 
-    private static final String HOST_URL = "https://api.themoviedb.org/3";
+    private static final String HOST_URL = "https://api.themoviedb.org/3/";
     private final Retrofit restAdapter;
 
     public MovieDBClient(@NonNull Converter.Factory converterFactory,

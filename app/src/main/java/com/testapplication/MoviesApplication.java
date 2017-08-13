@@ -7,10 +7,6 @@ import com.testapplication.moviesapi.base.dagger.ApplicationModule;
 import com.testapplication.moviesapi.base.dagger.DaggerApplicationComponent;
 
 
-/**
- * Created by mfolcini on 17/07/2017.
- */
-
 public class MoviesApplication extends Application {
 
     private final ApplicationComponent applicationComponent = createComponent();
