@@ -1,8 +1,8 @@
 package com.testapplication.moviedetail.presenter;
 
 
-import com.testapplication.moviesapi.base.presenter.Presenter;
-import com.testapplication.moviesapi.base.presenter.PresenterView;
+import com.testapplication.base.presenter.Presenter;
+import com.testapplication.base.presenter.PresenterView;
 import com.testapplication.moviesplaying.model.Movie;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.testapplication.moviesapi.base.dagger;
+package com.testapplication.base.dagger;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

@@ -1,6 +1,6 @@
 package com.testapplication.moviesapi;
 
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.model.Movie;
 import com.testapplication.moviesplaying.presenter.MovieListPresenter;
 import com.testapplication.moviesplaying.presenter.MovieListPresenterImpl;

@@ -1,6 +1,6 @@
-package com.testapplication.moviesapi.base.dagger;
+package com.testapplication.base.dagger;
 
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 
 import dagger.Component;
 

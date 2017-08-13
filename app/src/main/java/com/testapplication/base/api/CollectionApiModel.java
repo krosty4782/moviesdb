@@ -1,9 +1,8 @@
-package com.testapplication.moviedetail.model;
+package com.testapplication.base.api;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.testapplication.moviesapi.base.api.MovieApiModel;
 
 import java.util.List;
 

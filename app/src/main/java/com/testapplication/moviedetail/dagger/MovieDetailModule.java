@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.testapplication.moviedetail.presenter.MovieDetailPresenter;
 import com.testapplication.moviedetail.presenter.MovieDetailPresenterImpl;
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 
 import dagger.Module;
 import dagger.Provides;

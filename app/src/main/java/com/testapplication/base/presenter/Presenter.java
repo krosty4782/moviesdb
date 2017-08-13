@@ -1,4 +1,4 @@
-package com.testapplication.moviesapi.base.presenter;
+package com.testapplication.base.presenter;
 
 public interface Presenter<T extends PresenterView> {
 

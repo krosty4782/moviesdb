@@ -3,7 +3,7 @@ package com.testapplication.moviesapi;
 
 import com.testapplication.moviedetail.presenter.MovieDetailPresenter;
 import com.testapplication.moviedetail.presenter.MovieDetailPresenterImpl;
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.model.Movie;
 
 import org.junit.Test;

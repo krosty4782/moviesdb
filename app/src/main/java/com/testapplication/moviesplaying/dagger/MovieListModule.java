@@ -2,7 +2,7 @@ package com.testapplication.moviesplaying.dagger;
 
 import android.support.annotation.NonNull;
 
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.presenter.MovieListPresenter;
 import com.testapplication.moviesplaying.presenter.MovieListPresenterImpl;
 

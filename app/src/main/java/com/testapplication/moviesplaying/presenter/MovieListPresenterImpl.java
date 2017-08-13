@@ -3,7 +3,7 @@ package com.testapplication.moviesplaying.presenter;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.model.Movie;
 
 import rx.Scheduler;

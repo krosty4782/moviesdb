@@ -1,6 +1,6 @@
 package com.testapplication.moviesplaying.dagger;
 
-import com.testapplication.moviesapi.base.dagger.ApplicationComponent;
+import com.testapplication.base.dagger.ApplicationComponent;
 import com.testapplication.moviesplaying.view.MovieListActivity;
 
 import dagger.Component;

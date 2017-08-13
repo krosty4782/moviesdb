@@ -1,4 +1,4 @@
-package com.testapplication.moviesapi.base.api;
+package com.testapplication.base.api;
 
 public interface RetrofitClient {
 

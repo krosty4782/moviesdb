@@ -1,6 +1,6 @@
 package com.testapplication.moviesplaying.services;
 
-import com.testapplication.moviesapi.base.api.MovieApiModel;
+import com.testapplication.base.api.MovieApiModel;
 import com.testapplication.moviesplaying.model.Movie;
 
 public class MovieApiModelToMovieConverter {

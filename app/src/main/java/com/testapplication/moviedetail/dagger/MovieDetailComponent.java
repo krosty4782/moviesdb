@@ -2,7 +2,7 @@ package com.testapplication.moviedetail.dagger;
 
 
 import com.testapplication.moviedetail.view.MovieDetailActivity;
-import com.testapplication.moviesapi.base.dagger.ApplicationComponent;
+import com.testapplication.base.dagger.ApplicationComponent;
 
 import dagger.Component;
 

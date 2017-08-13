@@ -1,11 +1,11 @@
-package com.testapplication.moviesapi.base.dagger;
+package com.testapplication.base.dagger;
 
 import com.google.gson.GsonBuilder;
-import com.testapplication.moviesapi.base.api.MovieDBClient;
-import com.testapplication.moviesapi.base.api.MoviesApi;
-import com.testapplication.moviesapi.base.api.RequestInterceptor;
-import com.testapplication.moviesapi.base.api.RetrofitClient;
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.api.MovieDBClient;
+import com.testapplication.base.api.MoviesApi;
+import com.testapplication.base.api.RequestInterceptor;
+import com.testapplication.base.api.RetrofitClient;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.services.MovieApiModelToMovieConverter;
 
 import dagger.Module;

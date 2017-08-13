@@ -24,7 +24,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
         notifyDataSetChanged();
     }
 
-
     MoviesAdapter(@NonNull MovieListPresenter movieListPresenter) {
         this.movieListPresenter = movieListPresenter;
     }

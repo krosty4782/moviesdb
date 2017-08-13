@@ -3,15 +3,11 @@ package com.testapplication.moviedetail.presenter;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.testapplication.moviesapi.base.services.MoviesService;
+import com.testapplication.base.services.MoviesService;
 import com.testapplication.moviesplaying.model.Movie;
 
 import rx.Scheduler;
 import rx.subscriptions.CompositeSubscription;
-
-/**
- * Created by mfolcini on 17/07/2017.
- */
 
 public class MovieDetailPresenterImpl implements MovieDetailPresenter {
 
@@ -44,7 +40,7 @@ public class MovieDetailPresenterImpl implements MovieDetailPresenter {
                         .filter(movie1 -> movie1.getCollectionId() != null)
                         .flatMap(filtered -> moviesService.getMoviesCollection(filtered.getCollectionId()))
                         .observeOn(notifications)
-                        .subscribe((movie1) -> view.showMoviesCollection(movie1),
+                        .subscribe(view::showMoviesCollection,
                                 e -> Log.d("ERROR: ", e.getLocalizedMessage())));
     }
 

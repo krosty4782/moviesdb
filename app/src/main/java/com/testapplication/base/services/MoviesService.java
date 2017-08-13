@@ -1,9 +1,10 @@
-package com.testapplication.moviesapi.base.services;
+package com.testapplication.base.services;
 
 import android.support.annotation.NonNull;
 
-import com.testapplication.moviesapi.base.api.MoviesApi;
-import com.testapplication.moviesapi.base.api.ResultsApiModel;
+import com.testapplication.base.api.CollectionApiModel;
+import com.testapplication.base.api.MoviesApi;
+import com.testapplication.base.api.ResultsApiModel;
 import com.testapplication.moviesplaying.model.Movie;
 import com.testapplication.moviesplaying.services.MovieApiModelToMovieConverter;
 
@@ -50,13 +51,12 @@ public class MoviesService {
                 .doOnNext(movie -> movieInfoCache.put(movieId, movie));
     }
 
-
     public Observable<List<Movie>> getMoviesCollection(String collectionId) {
         if (movieCollectionCache.containsKey(collectionId)) {
             return Observable.just(movieCollectionCache.get(collectionId));
         }
         return moviesApi.getMovieCollection(collectionId)
-                .flatMapIterable(collectionApiModel -> collectionApiModel.getMovies())
+                .flatMapIterable(CollectionApiModel::getMovies)
                 .map(movieApiModel -> searchApiModelToSearchConverter.convertSearchApiModelToSearchModel(movieApiModel))
                 .toList()
                 .doOnNext(movie -> movieCollectionCache.put(collectionId, movie));
