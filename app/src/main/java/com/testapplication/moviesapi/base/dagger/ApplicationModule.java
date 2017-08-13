@@ -6,7 +6,7 @@ import com.testapplication.moviesapi.base.api.MoviesApi;
 import com.testapplication.moviesapi.base.api.RequestInterceptor;
 import com.testapplication.moviesapi.base.api.RetrofitClient;
 import com.testapplication.moviesapi.base.services.MoviesService;
-import com.testapplication.moviesplaying.SearchApiModelToSearchConverter;
+import com.testapplication.moviesplaying.services.SearchApiModelToSearchConverter;
 
 import dagger.Module;
 import dagger.Provides;

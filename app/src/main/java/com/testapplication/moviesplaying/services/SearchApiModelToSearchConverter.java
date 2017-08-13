@@ -1,4 +1,4 @@
-package com.testapplication.moviesplaying;
+package com.testapplication.moviesplaying.services;
 
 import com.testapplication.moviesapi.base.api.MovieApiModel;
 import com.testapplication.moviesplaying.model.Movie;

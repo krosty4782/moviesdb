@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.testapplication.moviesapi.base.api.MoviesApi;
 import com.testapplication.moviesapi.base.api.ResultsApiModel;
-import com.testapplication.moviesplaying.SearchApiModelToSearchConverter;
+import com.testapplication.moviesplaying.services.SearchApiModelToSearchConverter;
 import com.testapplication.moviesplaying.model.Movie;
 
 import java.util.ArrayList;
