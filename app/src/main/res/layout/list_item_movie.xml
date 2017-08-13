@@ -15,12 +15,5 @@
             android:layout_height="match_parent"
             android:maxLines="1"
             android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/item_overview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/item_title"
-            android:maxLines="2"/>
     </RelativeLayout>
 </FrameLayout>
