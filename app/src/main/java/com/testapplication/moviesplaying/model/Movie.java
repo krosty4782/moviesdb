@@ -14,6 +14,7 @@ public class Movie implements Serializable {
     private String title;
     private String id;
     private String overview;
+    private String collectionId;
 
     public String getTitle() {
         return title;
@@ -37,5 +38,13 @@ public class Movie implements Serializable {
 
     public void setOverview(String overview) {
         this.overview = overview;
+    }
+
+    public String getCollectionId() {
+        return collectionId;
+    }
+
+    public void setCollectionId(String collectionId) {
+        this.collectionId = collectionId;
     }
 }

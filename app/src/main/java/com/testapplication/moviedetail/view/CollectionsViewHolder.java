@@ -1,28 +1,29 @@
-package com.testapplication.moviesplaying.view;
+package com.testapplication.moviedetail.view;
 
 import android.view.View;
 import android.widget.TextView;
 
+import com.testapplication.moviedetail.presenter.MovieDetailPresenter;
 import com.testapplication.moviesapi.R;
 import com.testapplication.moviesplaying.model.Movie;
-import com.testapplication.moviesplaying.presenter.MovieListPresenter;
+import com.testapplication.moviesplaying.view.BaseViewHolder;
 
-public class MoviesViewHolder extends BaseViewHolder implements View.OnClickListener {
+public class CollectionsViewHolder extends BaseViewHolder implements View.OnClickListener {
 
-    private final MovieListPresenter movieListPresenter;
+    private final MovieDetailPresenter movieDetailPresenter;
     private Movie movie;
     private TextView titleView;
 
-    public MoviesViewHolder(View itemView, MovieListPresenter movieListPresenter) {
+    public CollectionsViewHolder(View itemView, MovieDetailPresenter movieDetailPresenter) {
         super(itemView);
-        this.movieListPresenter = movieListPresenter;
+        this.movieDetailPresenter = movieDetailPresenter;
         itemView.setOnClickListener(this);
         titleView = (TextView) itemView.findViewById(R.id.item_title);
     }
 
     @Override
     public void onClick(View view) {
-        movieListPresenter.onMovieSelected(movie);
+        movieDetailPresenter.onMovieSelected(movie);
     }
 
     @Override

@@ -6,7 +6,7 @@ import com.testapplication.moviesapi.base.api.MoviesApi;
 import com.testapplication.moviesapi.base.api.RequestInterceptor;
 import com.testapplication.moviesapi.base.api.RetrofitClient;
 import com.testapplication.moviesapi.base.services.MoviesService;
-import com.testapplication.moviesplaying.services.SearchApiModelToSearchConverter;
+import com.testapplication.moviesplaying.services.MovieApiModelToMovieConverter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -47,13 +47,13 @@ public class ApplicationModule {
 
     @Provides
     @ApplicationScope
-    public SearchApiModelToSearchConverter provideSearchApiModelToSearchConverter() {
-        return new SearchApiModelToSearchConverter();
+    public MovieApiModelToMovieConverter provideSearchApiModelToSearchConverter() {
+        return new MovieApiModelToMovieConverter();
     }
 
     @Provides
     @ApplicationScope
-    public MoviesService provideMoviesService(MoviesApi moviesApi, SearchApiModelToSearchConverter converter) {
+    public MoviesService provideMoviesService(MoviesApi moviesApi, MovieApiModelToMovieConverter converter) {
         return new MoviesService(moviesApi, converter);
     }
 }

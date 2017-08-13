@@ -7,7 +7,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.testapplication.MoviesApplication;
-import com.testapplication.moviedetail.MovieDetailActivity;
+import com.testapplication.moviedetail.view.MovieDetailActivity;
 import com.testapplication.moviesapi.R;
 import com.testapplication.moviesplaying.dagger.DaggerMovieListComponent;
 import com.testapplication.moviesplaying.dagger.MovieListModule;
